@@ -1,0 +1,10 @@
+apiVersion: composition.krateo.io/v0-1-0
+kind: NginxChart
+metadata:
+  name: nginx-sample
+spec:
+  image:
+    repository: nginx
+    tag: "1.25"
+  service:
+    type: ClusterIP
